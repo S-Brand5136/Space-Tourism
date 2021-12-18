@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "../helpers/Home";
-import Destination from "../helpers/Destination";
-import Crew from "../helpers/Crew";
-import Technology from "../helpers/Technology";
+import Home from "../pages/Home";
+import Destination from "../pages/Destination";
+import Crew from "../pages/Crew";
+import Technology from "../pages/Technology";
 import Navigation from "./Navigation";
 
 const App = () => {
