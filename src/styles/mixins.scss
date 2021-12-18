@@ -1,0 +1,16 @@
+@import "variables";
+
+@mixin pageBackground($mobileUrl, $tabletUrl, $desktopUrl) {
+  background-image: url($mobileUrl);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    background-image: url($tabletUrl);
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    background-image: url($desktopUrl);
+  }
+}
