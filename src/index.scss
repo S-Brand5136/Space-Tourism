@@ -1,9 +1,14 @@
 @import "~normalize.css/normalize.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap");
 @import "styles/variables.scss";
+@import "~bootstrap/scss/bootstrap";
 @import "styles/reset.scss";
+
+*,
+body {
+  box-sizing: border-box;
+}
 
 main {
   height: 100vh;
