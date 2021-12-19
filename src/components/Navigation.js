@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import Button from "./Button";
 import Drawer from "./Drawer";
 import "./styles/Navigation.scss";
@@ -6,6 +7,7 @@ import NavList from "./NavList";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);
+  const location = useLocation();
 
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
@@ -14,18 +16,22 @@ const Navigation = () => {
     {
       url: "/",
       title: "Home",
+      active: location.pathname === "/",
     },
     {
-      url: "/Crew",
+      url: "/crew",
       title: "Crew",
+      active: location.pathname === "/crew",
     },
     {
-      url: "/Destination",
+      url: "/destination",
       title: "Destination",
+      active: location.pathname === "/destination",
     },
     {
-      url: "/Technology",
+      url: "/technology",
       title: "Technology",
+      active: location.pathname === "/technology",
     },
   ];
 
