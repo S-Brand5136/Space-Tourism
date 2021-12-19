@@ -30,6 +30,12 @@ $spacing-medium: 2.35px;
 $spacing-small: 2.7px;
 
 // Breakpoints
-$breakpoint-mobile: 375px;
+$breakpoint-mobile: 428px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1440px;
+
+// Bootstrap
+$offcanvas-horizontal-width: 16rem;
+$offcanvas-bg-color: transparent;
+$offcanvas-color: $primary;
+$offcanvas-border-width: none;
