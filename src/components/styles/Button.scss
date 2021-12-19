@@ -1,6 +1,16 @@
 .btn {
   border: none;
 
+  &:active {
+    box-shadow: none;
+    border: none;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+    border: none;
+  }
+
   &--hidden {
     display: none !important;
   }
