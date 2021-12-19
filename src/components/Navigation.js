@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
 import Drawer from "./Drawer";
-import "./Navigation.scss";
+import "./styles/Navigation.scss";
 import NavList from "./NavList";
 
 const Navigation = () => {

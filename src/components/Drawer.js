@@ -1,7 +1,7 @@
 import React from "react";
 import { Offcanvas } from "react-bootstrap";
 import Button from "./Button";
-import "./Drawer.scss";
+import "./styles/Drawer.scss";
 import NavList from "./NavList";
 
 const Drawer = (props) => {

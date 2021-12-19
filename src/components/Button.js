@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import "./Button.scss";
+import "./styles/Button.scss";
 
 const Button = (props) => {
   let buttonClass = classNames("btn", {
