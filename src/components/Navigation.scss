@@ -1,0 +1,12 @@
+@import "../styles/variables.scss";
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100vw;
+  position: fixed;
+  padding: 1.5rem;
+  top: 0;
+}
