@@ -8,8 +8,8 @@ import Navigation from "./components/Navigation";
 const App = () => {
   return (
     <div className='App'>
-      <Navigation />
       <BrowserRouter>
+        <Navigation />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/destination' element={<Destination />} />
