@@ -1,7 +1,15 @@
 .btn {
-  color: transparent;
-  background-color: black;
+  border: none;
+
+  &--hidden {
+    display: none !important;
+  }
 
   &--collapse {
+    background-color: transparent;
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
