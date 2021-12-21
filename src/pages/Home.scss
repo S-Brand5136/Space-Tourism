@@ -7,4 +7,17 @@ main.home {
     "../../public/images/home/background-home-tablet.jpg",
     "../../public/images/home/background-home-desktop.jpg"
   );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+
+  article {
+    @include articleTpography;
+
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+  }
 }
