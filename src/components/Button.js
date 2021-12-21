@@ -7,6 +7,7 @@ const Button = (props) => {
   let buttonClass = classNames("btn", {
     "btn--collapse": props.collapse,
     "btn--hidden": props.hidden,
+    "btn--explore": props.explore,
   });
 
   return (
