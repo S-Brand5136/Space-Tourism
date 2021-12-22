@@ -1,9 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import "./Home.scss";
 import "../components/styles/Button.scss";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const clickHandler = () => {
+    navigate("/destination");
+  };
+
   return (
     <main className='home'>
       <article>
@@ -16,7 +23,7 @@ const Home = () => {
           experience!
         </p>
       </article>
-      <Button className='btn' explore>
+      <Button onClick={clickHandler} className='btn' explore>
         Explore
       </Button>
     </main>
