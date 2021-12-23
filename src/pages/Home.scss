@@ -3,9 +3,9 @@
 
 main.home {
   @include pageBackground(
-    "../../public/images/home/background-home-mobile.jpg",
-    "../../public/images/home/background-home-tablet.jpg",
-    "../../public/images/home/background-home-desktop.jpg"
+    "../../public/assets/home/background-home-mobile.jpg",
+    "../../public/assets/home/background-home-tablet.jpg",
+    "../../public/assets/home/background-home-desktop.jpg"
   );
 
   display: flex;
