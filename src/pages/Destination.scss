@@ -3,9 +3,9 @@
 
 main.destination {
   @include pageBackground(
-    "../../public/images/destination/background-destination-mobile.jpg",
-    "../../public/images/destination/background-destination-tablet.jpg",
-    "../../public/images/destination/background-destination-desktop.jpg"
+    "../../public/assets/destination/background-destination-mobile.jpg",
+    "../../public/assets/destination/background-destination-tablet.jpg",
+    "../../public/assets/destination/background-destination-desktop.jpg"
   );
 
   display: grid;
@@ -18,4 +18,15 @@ main.destination {
   justify-content: center;
   align-items: center;
   padding-top: 5rem;
+}
+
+div.carousel-item {
+  margin-bottom: 4rem;
+  text-align: center;
+
+  img.carousel-image {
+    height: 13rem;
+    width: auto;
+    object-fit: contain;
+  }
 }
