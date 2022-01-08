@@ -25,6 +25,28 @@
     }
   }
 
+  &--indicator {
+    color: $primary !important;
+    font-size: $subheader-two-size !important;
+    letter-spacing: $spacing-small;
+    font-family: $primary-text;
+    text-transform: uppercase;
+  }
+
+  &--underline {
+    display: block;
+
+    &::after {
+      content: "";
+      background: $primary !important;
+      position: absolute !important;
+      bottom: 0;
+      left: 0.9rem;
+      height: 3px !important;
+      width: 50%;
+    }
+  }
+
   &--explore {
     background-color: $primary !important;
     height: 10rem;
