@@ -8,6 +8,8 @@ const Button = (props) => {
     "btn--collapse": props.collapse,
     "btn--hidden": props.hidden,
     "btn--explore": props.explore,
+    "btn--indicator": props.indicator,
+    "btn--underline": props.underline,
   });
 
   return (
