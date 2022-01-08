@@ -30,3 +30,12 @@ div.carousel-item {
     object-fit: contain;
   }
 }
+
+div.indicators {
+  position: absolute;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
