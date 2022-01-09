@@ -12,10 +12,10 @@ main.destination {
     "head"
     "primary";
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 80%;
+  grid-template-rows: 10% 70%;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
+  padding: 5rem 0 3rem 0;
 
   header {
     grid-area: head;
@@ -28,19 +28,18 @@ main.destination {
 
 div.carousel-item {
   text-align: center;
-  height: 10;
 
   img.carousel-image {
     height: 13rem;
-    margin: 3rem 0;
     width: auto;
+    margin: 1rem 0 5rem 0;
     object-fit: contain;
   }
 }
 
 div.indicators {
-  position: absolute;
-  margin-bottom: 12rem;
+  position: fixed;
+  margin-bottom: 16rem;
   display: flex;
   justify-content: center;
   align-items: center;
