@@ -7,25 +7,32 @@ main.destination {
     "../../public/assets/destination/background-destination-tablet.jpg",
     "../../public/assets/destination/background-destination-desktop.jpg"
   );
-
   display: grid;
   grid-template-areas:
     "head"
-    "primary"
-    "secondary";
+    "primary";
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 50% 40%;
+  grid-template-rows: 10% 80%;
   justify-content: center;
   align-items: center;
   padding-top: 5rem;
+
+  header {
+    grid-area: head;
+  }
+
+  div.carousel {
+    grid-area: primary;
+  }
 }
 
 div.carousel-item {
-  margin-bottom: 4rem;
   text-align: center;
+  height: 10;
 
   img.carousel-image {
     height: 13rem;
+    margin: 3rem 0;
     width: auto;
     object-fit: contain;
   }
@@ -33,7 +40,7 @@ div.carousel-item {
 
 div.indicators {
   position: absolute;
-  margin-bottom: 5rem;
+  margin-bottom: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
