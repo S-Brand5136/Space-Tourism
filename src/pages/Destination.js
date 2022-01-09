@@ -4,6 +4,7 @@ import ButtonGroup from "../components/ButtonGroup";
 import { Carousel } from "react-bootstrap";
 import { request } from "../helpers/request";
 import "./Destination.scss";
+import InfoCard from "../components/InfoCard";
 
 const Destination = () => {
   const [destinations, setDestinations] = useState([]);
@@ -41,6 +42,7 @@ const Destination = () => {
                 src={process.env.PUBLIC_URL + `${item.images.png}`}
                 alt={item.name}
               />
+              <InfoCard item={item} />
             </Carousel.Item>
           );
         })}
