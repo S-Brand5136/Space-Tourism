@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Technology.scss";
+import "./styles/Technology.scss";
 
 const Technology = () => {
   return <main className='tech'></main>;

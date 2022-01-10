@@ -3,7 +3,7 @@ import PageHeader from "../components/PageHeader";
 import ButtonGroup from "../components/ButtonGroup";
 import { Carousel } from "react-bootstrap";
 import { request } from "../helpers/request";
-import "./Destination.scss";
+import "./styles/Destination.scss";
 import InfoCard from "../components/InfoCard";
 
 const Destination = () => {

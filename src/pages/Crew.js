@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Crew.scss";
+import "./styles/Crew.scss";
 
 const Crew = () => {
   return <main className='crew'></main>;
