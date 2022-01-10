@@ -3,7 +3,7 @@ import React from "react";
 import "./Crew.scss";
 
 const Crew = () => {
-  return <div></div>;
+  return <main className='crew'></main>;
 };
 
 export default Crew;
