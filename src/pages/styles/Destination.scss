@@ -3,9 +3,9 @@
 
 main.destination {
   @include pageBackground(
-    "../../public/assets/destination/background-destination-mobile.jpg",
-    "../../public/assets/destination/background-destination-tablet.jpg",
-    "../../public/assets/destination/background-destination-desktop.jpg"
+    "../../../public/assets/destination/background-destination-mobile.jpg",
+    "../../../public/assets/destination/background-destination-tablet.jpg",
+    "../../../public/assets/destination/background-destination-desktop.jpg"
   );
   display: grid;
   grid-template-areas:

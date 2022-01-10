@@ -3,8 +3,8 @@
 
 main.tech {
   @include pageBackground(
-    "../../public/assets/technology/background-technology-mobile.jpg",
-    "../../public/assets/technology/background-technology-tablet.jpg",
-    "../../public/assets/technology/background-technology-desktop.jpg"
+    "../../../public/assets/technology/background-technology-mobile.jpg",
+    "../../../public/assets/technology/background-technology-tablet.jpg",
+    "../../../public/assets/technology/background-technology-desktop.jpg"
   );
 }
