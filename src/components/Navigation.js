@@ -19,14 +19,14 @@ const Navigation = () => {
       active: location.pathname === "/",
     },
     {
-      url: "/crew",
-      title: "Crew",
-      active: location.pathname === "/crew",
-    },
-    {
       url: "/destination",
       title: "Destination",
       active: location.pathname === "/destination",
+    },
+    {
+      url: "/crew",
+      title: "Crew",
+      active: location.pathname === "/crew",
     },
     {
       url: "/technology",
