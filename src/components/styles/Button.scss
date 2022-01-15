@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-.btn {
+.button {
   border: none;
 
   &:active {
@@ -31,6 +31,15 @@
     letter-spacing: $spacing-small;
     font-family: $primary-text;
     text-transform: uppercase;
+  }
+
+  &--indicator-round {
+    border-radius: 50% !important;
+    border-bottom: none;
+    background-color: $primary !important;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin: 0 0.25rem 0 0.25rem;
   }
 
   &--underline {

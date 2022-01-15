@@ -4,12 +4,13 @@ import classNames from "classnames";
 import "./styles/Button.scss";
 
 const Button = (props) => {
-  let buttonClass = classNames("btn", {
-    "btn--collapse": props.collapse,
-    "btn--hidden": props.hidden,
-    "btn--explore": props.explore,
-    "btn--indicator": props.indicator,
-    "btn--underline": props.underline,
+  let buttonClass = classNames("button", {
+    "button--collapse": props.collapse,
+    "button--hidden": props.hidden,
+    "button--explore": props.explore,
+    "button--indicator": props.indicator,
+    "button--indicator-round": props.round,
+    "button--underline": props.underline,
   });
 
   return (
