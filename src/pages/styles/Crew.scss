@@ -2,10 +2,37 @@
 @import "../../styles/mixins.scss";
 
 main.crew {
-  padding-top: 5rem;
   @include pageBackground(
     "../../../public/assets/crew/background-crew-mobile.jpg",
     "../../../public/assets/crew/background-crew-tablet.jpg",
     "../../../public/assets/crew/background-crew-desktop.jpg"
   );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 5rem 0 3rem 0;
+
+  div.carousel {
+    margin-top: 3rem;
+  }
+
+  div.image-container {
+    margin: auto;
+    border-bottom: 1px solid #383b4b;
+    width: 85%;
+    margin-bottom: 4rem;
+
+    img.carousel-image {
+      max-height: 12rem;
+
+      margin: 0;
+    }
+  }
+
+  div.indicators {
+    position: relative;
+    top: 13.5rem;
+  }
 }
