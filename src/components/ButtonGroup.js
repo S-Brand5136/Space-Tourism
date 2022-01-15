@@ -9,9 +9,10 @@ const ButtonGroup = (props) => {
       {props.itemArray.map((text, index) => {
         return (
           <Button
+            round={props.rounded}
             indicator
-            underline
-            key={text}
+            underline={props.underline}
+            key={index}
             onClick={() => props.handler(index)}
           >
             {text}
