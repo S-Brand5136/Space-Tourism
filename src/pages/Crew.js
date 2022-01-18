@@ -58,6 +58,7 @@ const Crew = () => {
           <ButtonGroup
             rounded={true}
             itemArray={["", "", "", ""]}
+            active={itemNum}
             handler={carouselHandler}
           />
         </div>
