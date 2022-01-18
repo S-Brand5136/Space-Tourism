@@ -46,10 +46,14 @@ const Destination = () => {
             </Carousel.Item>
           );
         })}
+        <div className='indicators'>
+          <ButtonGroup
+            active={itemNum}
+            itemArray={labels}
+            handler={carouselHandler}
+          />
+        </div>
       </Carousel>
-      <div className='indicators'>
-        <ButtonGroup itemArray={labels} handler={carouselHandler} />
-      </div>
     </main>
   );
 };
