@@ -7,4 +7,15 @@ main.tech {
     "../../../public/assets/technology/background-technology-tablet.jpg",
     "../../../public/assets/technology/background-technology-desktop.jpg"
   );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5rem 0 3rem 0;
+  overflow-x: hidden;
+
+  .info-card {
+    padding: 0 5rem 0 5rem;
+  }
 }
