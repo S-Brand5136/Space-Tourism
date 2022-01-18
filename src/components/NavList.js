@@ -14,7 +14,11 @@ const NavList = (props) => {
     );
   });
 
-  return <ul className='navlist'>{navItems}</ul>;
+  return (
+    <ul onClick={props.hide} className='navlist'>
+      {navItems}
+    </ul>
+  );
 };
 
 export default NavList;

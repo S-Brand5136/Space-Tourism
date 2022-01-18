@@ -57,7 +57,7 @@ const Navigation = () => {
             </svg>
           </Button>
 
-          <Drawer urls={pageUrls} show={show} close={handleClose} />
+          <Drawer urls={pageUrls} show={show} close={() => handleClose()} />
         </>
       ) : (
         <NavList className='nav' urls={pageUrls}></NavList>

@@ -5,6 +5,9 @@ import "./styles/Drawer.scss";
 import NavList from "./NavList";
 
 const Drawer = (props) => {
+  const clickHandler = () => {
+    props.close();
+  };
   return (
     <>
       <Offcanvas
@@ -26,7 +29,7 @@ const Drawer = (props) => {
           </Button>
         </Offcanvas.Header>
         <Offcanvas.Body className='drawer--body'>
-          <NavList urls={props.urls} />
+          <NavList hide={clickHandler} urls={props.urls} />
         </Offcanvas.Body>
       </Offcanvas>
     </>
