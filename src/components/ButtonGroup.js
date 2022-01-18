@@ -10,6 +10,7 @@ const ButtonGroup = (props) => {
         return (
           <Button
             round={props.rounded}
+            selected={props.active === index}
             indicator
             underline={props.underline}
             key={index}
