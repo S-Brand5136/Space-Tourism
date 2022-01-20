@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import NavItem from "./NavItem";
 
 import "./styles/NavList.scss";
