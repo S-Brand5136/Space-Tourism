@@ -12,6 +12,12 @@ li.navItem {
   text-transform: uppercase;
 
   &--active {
+    @media only screen and (min-width: $breakpoint-mobile) {
+      a {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid white;
+      }
+    }
   }
 
   span {

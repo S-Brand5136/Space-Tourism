@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+@media only screen and (min-width: $breakpoint-mobile) {
+  ul.navlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($primary, 0.04);
+    padding: 1rem 2rem 1rem 2rem;
+
+    li.navItem {
+      width: auto;
+    }
+  }
+}

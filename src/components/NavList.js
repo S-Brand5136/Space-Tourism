@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavItem from "./NavItem";
+
+import "./styles/NavList.scss";
 
 const NavList = (props) => {
   const navItems = props.urls.map((item, index) => {
