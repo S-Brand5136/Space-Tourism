@@ -45,7 +45,7 @@ const Technology = () => {
               </div>
               <section className='info-card'>
                 <Text secondary secondaryHeading tag='h5'>
-                  The Technology...
+                  THE TERMINOLOGY…
                 </Text>
                 <Text secondaryHeading heading tag='h3'>
                   {item.name}
