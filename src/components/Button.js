@@ -10,6 +10,7 @@ const Button = (props) => {
     "button--explore": props.explore,
     "button--indicator": props.indicator,
     "button--indicator-round": props.round,
+    "button--indicator-tech": props.tech,
     "button--indicator-selected": props.selected,
     "button--underline": props.underline,
   });

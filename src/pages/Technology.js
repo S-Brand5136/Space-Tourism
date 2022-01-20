@@ -9,14 +9,13 @@ import { request } from "../helpers/request";
 
 const Technology = () => {
   const [data, setData] = useState([]);
-  const labels = [1, 2, 3];
+  const labels = [<span>1</span>, <span>2</span>, <span>3</span>];
   const [itemNum, setItemNum] = useState(0);
 
   useEffect(() => {
     if (data.length <= 0) {
       request.get("technology").then((data) => {
         setData(data);
-        console.log(data);
       });
     }
   }, [data]);
@@ -58,6 +57,8 @@ const Technology = () => {
         })}
         <div className='indicators'>
           <ButtonGroup
+            tech
+            rounded
             active={itemNum}
             itemArray={labels}
             handler={carouselHandler}
