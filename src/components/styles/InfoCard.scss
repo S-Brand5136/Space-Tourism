@@ -31,4 +31,26 @@ section.info-card {
     padding-top: 2rem;
     border-top: 1px solid rgba($color: $gray--hover, $alpha: 0.5);
   }
+
+  @media only screen and (min-width: $breakpoint-mobile) {
+    padding: 0 5rem 0 5rem;
+
+    .top {
+      margin-top: 3rem;
+      gap: 2rem;
+    }
+
+    .bottom {
+      flex-direction: row;
+      gap: 5rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
 }

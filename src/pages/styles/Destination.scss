@@ -12,25 +12,58 @@ main.destination {
   justify-content: flex-start;
   align-items: center;
   padding: 5rem 0 3rem 0;
-  overflow-x: hidden;
+  overflow: hidden;
+  width: 100%;
+
+  @media only screen and (min-width: $breakpoint-mobile) {
+    padding-top: 8rem;
+  }
 }
 
 div.carousel-item {
   text-align: center;
 
   img.carousel-image {
-    height: 13rem;
     width: auto;
     margin: 1rem 0 5rem 0;
     object-fit: contain;
+  }
+
+  @media only screen and (max-width: $breakpoint-mobile) {
+    img.carousel-image {
+      max-height: 11.5rem;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) {
+    img.carousel-image {
+      margin-top: 3rem;
+      max-height: 20rem;
+    }
   }
 }
 
 div.indicators {
   position: relative;
-  top: 15.5rem;
+  top: 13.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media only screen and (max-width: $breakpoint-mobile) {
+    top: 14rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    top: 25rem;
+
+    .btn-group {
+      gap: 2rem;
+
+      .button {
+        font-size: $nav-font-size !important;
+      }
+    }
+  }
 }

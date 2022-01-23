@@ -10,9 +10,18 @@
 
   &--primary-heading {
     text-transform: uppercase;
-    font-size: $heading-three-size;
+    font-size: $heading-one-size;
     font-family: $primary-heading;
     color: $primary;
+
+    @media screen and (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
+      font-size: $heading-two-size;
+      line-height: 91px;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: $heading-three-size;
+    }
   }
 
   &--secondary-heading {
