@@ -11,11 +11,18 @@ main.crew {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  padding: 5rem 0 3rem 0;
+  height: 100%;
+  padding: 7rem 0 3rem 0;
 
   div.carousel {
     margin-top: 3rem;
+  }
+
+  div.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   div.image-container {
@@ -23,16 +30,66 @@ main.crew {
     border-bottom: 1px solid #383b4b;
     width: 85%;
     margin-bottom: 4rem;
-
-    img.carousel-image {
-      max-height: 12rem;
-
-      margin: 0;
-    }
   }
 
   div.indicators {
     position: relative;
     top: 13.5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-mobile) {
+    div.catousel-container {
+      flex-direction: column;
+    }
+
+    img.carousel-image {
+      max-height: 12rem;
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
+    padding: 0;
+    display: grid;
+    grid-auto-columns: auto;
+    justify-content: center;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 100%;
+
+    header {
+      margin-top: 1.75rem;
+    }
+
+    div.carousel {
+      height: 100%;
+      margin-top: 0;
+
+      div.carousel-inner {
+        height: 100%;
+
+        div.carousel-item {
+          height: 100%;
+        }
+      }
+    }
+
+    div.carousel-container {
+      flex-direction: column-reverse;
+      margin-bottom: 0;
+      height: 100%;
+
+      section.info-card {
+        padding: 0 10rem 0 10rem;
+      }
+
+      div.image-container {
+        margin-bottom: 0;
+
+        img.carousel-image {
+          max-height: 30rem;
+          margin: 0;
+        }
+      }
+    }
   }
 }

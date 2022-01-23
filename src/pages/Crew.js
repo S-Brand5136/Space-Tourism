@@ -35,22 +35,24 @@ const Crew = () => {
         {crewData.map((item) => {
           return (
             <Carousel.Item interval={null} key={item.name}>
-              <div className='image-container'>
-                <img
-                  className='carousel-image'
-                  src={process.env.PUBLIC_URL + `${item.images.png}`}
-                  alt=''
-                />
+              <div className='carousel-container'>
+                <div className='image-container'>
+                  <img
+                    className='carousel-image'
+                    src={process.env.PUBLIC_URL + `${item.images.png}`}
+                    alt=''
+                  />
+                </div>
+                <section className='info-card'>
+                  <Text secondary secondaryHeading tag='h5'>
+                    {item.role}
+                  </Text>
+                  <Text secondaryHeading heading tag='h3'>
+                    {item.name}
+                  </Text>
+                  <Text className='mt-5'>{item.bio}</Text>
+                </section>
               </div>
-              <section className='info-card'>
-                <Text secondary secondaryHeading tag='h5'>
-                  {item.role}
-                </Text>
-                <Text secondaryHeading heading tag='h3'>
-                  {item.name}
-                </Text>
-                <Text className='mt-5'>{item.bio}</Text>
-              </section>
             </Carousel.Item>
           );
         })}
