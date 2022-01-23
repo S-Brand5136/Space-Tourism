@@ -18,28 +18,10 @@
 @mixin articleTpography {
   text-align: center;
 
-  h4 {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: $primary-text;
-    color: $secondary;
-    letter-spacing: $spacing-small;
-    line-height: 19px;
-  }
-
   h1 {
-    padding: 1.5rem 0 1.5rem 0;
-    text-transform: uppercase;
-    font-size: 80px;
+    padding: 4rem 0 4rem 0;
     line-height: 100px;
-    font-family: $primary-heading;
-    color: $primary;
   }
 
-  p {
-    font-size: 16px;
-    line-height: 25px;
-    font-family: $secondary-heading;
-    color: $secondary;
-  }
+  padding: 0 13rem 0 13rem;
 }
