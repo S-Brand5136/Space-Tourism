@@ -17,11 +17,18 @@
 
 @mixin articleTpography {
   text-align: center;
+  padding: 0 13rem 0 13rem;
 
   h1 {
     padding: 4rem 0 4rem 0;
     line-height: 100px;
   }
 
-  padding: 0 13rem 0 13rem;
+  @media only screen and (max-width: $breakpoint-mobile) {
+    padding: 0;
+
+    h1 {
+      padding: 0;
+    }
+  }
 }
