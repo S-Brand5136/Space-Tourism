@@ -89,17 +89,23 @@
 
   &--explore {
     background-color: $primary !important;
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 15rem;
     text-transform: uppercase;
     border-radius: 100% !important;
     font-family: $primary-heading;
-    font-size: 20px !important;
+    font-size: $heading-four-size !important;
     letter-spacing: 1.25px;
     transition: all 0.5s ease;
 
     &:hover {
       box-shadow: 0 0 0 3rem $gray--hover;
+    }
+
+    @media only screen and (max-width: $breakpoint-mobile) {
+      height: 10rem;
+      width: 10rem;
+      font-size: 20px !important;
     }
   }
 }
