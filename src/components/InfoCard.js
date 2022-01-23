@@ -13,18 +13,22 @@ const InfoCard = (props) => {
         <Text>{props.item.description}</Text>
       </div>
       <div className='bottom'>
-        <Text secondaryHeading tag='h6'>
-          AVG. DISTANCE
-        </Text>
-        <Text primary tag='h3'>
-          {props.item.distance}
-        </Text>
-        <Text secondaryHeading tag='h6'>
-          EST. TRAVEL TIME
-        </Text>
-        <Text primary tag='h3'>
-          {props.item.travel}
-        </Text>
+        <div>
+          <Text secondaryHeading tag='h6'>
+            AVG. DISTANCE
+          </Text>
+          <Text primary tag='h3'>
+            {props.item.distance}
+          </Text>
+        </div>
+        <div>
+          <Text secondaryHeading tag='h6'>
+            EST. TRAVEL TIME
+          </Text>
+          <Text primary tag='h3'>
+            {props.item.travel}
+          </Text>
+        </div>
       </div>
     </section>
   );
